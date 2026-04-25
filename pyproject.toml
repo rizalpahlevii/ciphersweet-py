@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ciphersweet-python"
+version = "0.1.0"
+description = "Decrypt CipherSweet-encrypted database fields in Python (NaCl and FIPS backends)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Rizal Pahlevi", email = "mrizalpahlevi372@gmail.com" }]
+requires-python = ">=3.8"
+keywords = ["ciphersweet", "encryption", "decryption", "searchable-encryption", "database"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = [
+    "cryptography>=3.0",  # For AES-CTR, HKDF
+    "PyNaCl>=1.4",        # For XChaCha20-Poly1305
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov"]
+
+[project.urls]
+Homepage = "https://github.com/rizalpahlevii/ciphersweet-python"
+Issues = "https://github.com/rizalpahlevii/ciphersweet-python/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ciphersweet"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
