@@ -1,0 +1,437 @@
+{
+    "key": "b8d2a1a4e9f34c5a7d6e0f1b2c3d4e5f60718293a4b5c6d7e8f9011223344556",
+    "backends": {
+        "nacl": {
+            "field": {
+                "plaintext": "Ünïcode.User+Tag/42@Example.COM",
+                "ct": "nacl:CWc6XTlUvLev547UD4CBGarSjjm5D6YjozTLWrF9ieSUvndyh0kVZ71VMuz08YnJ06Hjck3EjhLPUZ_MqRjpQNi1Hm2JkcfFrA==",
+                "ct_aad": "nacl:mZle9Uq_gX_kA0dqma5DPVR0SA-4gzNVQr-Nf9qJErkgKvCDMGRyBtpLgMqzKrivxDZR3KURmvxVVbN4gRtEWoxieGR6FL7GoQ==",
+                "aad": "row:42",
+                "indexes": {
+                    "email_lower": "3760cfeb",
+                    "email_first": "bb",
+                    "email_alpha": "1a288b127b042a3d284bf5596d4bd25a6cdf5e1d8180b2971354d4c72bd31f087a276a5da500",
+                    "email_slow": "2e306a4be7e10893"
+                },
+                "types": {
+                    "email_lower": "6oirzium5hblq",
+                    "email_first": "sior7of3enuns",
+                    "email_alpha": "zi5e2s2ecrsjc",
+                    "email_slow": "m3cdym765tqac"
+                }
+            },
+            "row": {
+                "plaintext": {
+                    "id": 42,
+                    "tenant": "acme",
+                    "name": "Zoë \"Z\" O'Neil / ✓",
+                    "age": -7,
+                    "score": 1.5e-7,
+                    "active": false,
+                    "nickname": null,
+                    "maybe_int": 12345678901,
+                    "maybe_bool": null,
+                    "ssn": "123-45-6789"
+                },
+                "ciphertext": {
+                    "id": 42,
+                    "tenant": "acme",
+                    "name": "nacl:qD77c3641heP12f007sv-FXLsnqilHOmV5OZrNOqUOJeczCg-T7zKwU4p3Ue8K7rxMncpu8ZDbzYgFif_A==",
+                    "age": "nacl:JuFuvgpRm-Qp_rVk2lEOYU8Hfz_Ww6JvzCUW-xhv3UsM2JJTXsfsADb-XzFtrJBX",
+                    "score": "nacl:aDl49nbPPUEpQFVc0Yck-DU1fJN7tTENsrMrt4xxeGyrBZw-mH4j34Xm1g5cn39d",
+                    "active": "nacl:fkqPIH0EfdsZ2t5vOgHdKrP8MAvBLtGIAg6-_cgbfcotmjfnIH161Xo=",
+                    "nickname": null,
+                    "maybe_int": "nacl:yrMZIXxFtz10bA1N7riFxrrOYQMKWuzCfHDVyVxx1R8nfChieA1ZsG1HL3Ar9JVm",
+                    "maybe_bool": null,
+                    "ssn": "nacl:_9fkpAzPbEceylaTlYIXeGpxK6mS1pYZ7WuYrgPd09RLa4GA0Ped4-B9jgIkDSoukOe4"
+                },
+                "indexes": {
+                    "ssn_last4": "1874",
+                    "age_idx": "517455d0",
+                    "active_idx": "06",
+                    "score_idx": "40492403",
+                    "ssn_active": "cbcf5e64e8a11af7",
+                    "name_slow": "9735b3cc"
+                },
+                "compound_type": "sr2lobjgwx3uk",
+                "packed": "{\"ssn\":\"0400000000000000Njc4OQ==\",\"active\":false,\"score\":\"0600000000000000MS41RS03\",\"age\":-7,\"name\":\"1500000000000000Wm_DqyAiWiIgTydOZWlsIC8g4pyT\"}",
+                "typed_indexes": {
+                    "ssn_last4": {
+                        "type": "bd5jb4vrsxe5u",
+                        "value": "1874"
+                    },
+                    "age_idx": {
+                        "type": "k3tkvq65md63s",
+                        "value": "517455d0"
+                    },
+                    "active_idx": {
+                        "type": "44t4g2kv6ymhu",
+                        "value": "06"
+                    },
+                    "score_idx": {
+                        "type": "xxrti56c2zrd2",
+                        "value": "40492403"
+                    },
+                    "ssn_active": {
+                        "type": "sr2lobjgwx3uk",
+                        "value": "cbcf5e64e8a11af7"
+                    },
+                    "name_slow": {
+                        "type": "i5jfg3abnmqww",
+                        "value": "9735b3cc"
+                    }
+                }
+            },
+            "json": {
+                "plaintext": {
+                    "id": 7,
+                    "doc": {
+                        "profile": {
+                            "name": "Ann",
+                            "age": 30,
+                            "city": "Oslo"
+                        },
+                        "flags": [
+                            true,
+                            false
+                        ],
+                        "balance": 10.25
+                    }
+                },
+                "ciphertext": {
+                    "id": 7,
+                    "doc": "{\"profile\":{\"name\":\"nacl:9GRZfwRh6gmkTqO3e_6oR4b_HwYlyqPwEE0tYq0cJAmWl6wkOtdC483LRw==\",\"age\":\"nacl:SEVJlVbK4cEngPctRNfDipRuRetolR6zX4zH5x4W5bABBcdfoMDX1e5LnjA6693w\",\"city\":\"Oslo\"},\"flags\":[\"nacl:leRphrpOxlaueTwW5tXRhd_YUztYHlT9Zl5gXIo3u3YL5--THiF5MyI=\",false],\"balance\":\"nacl:cyveGNJzhZs58CvSNjLsamXXNHI2-l308Z-RvY-_ux5sboEu3Dk6wo_PBqurWF02\"}"
+                },
+                "map": "ece34062{\"fields\":{\"$70726f66696c65.$6e616d65\":\"string\",\"$70726f66696c65.$616765\":\"int\",\"$666c616773.#0000000000000000\":\"bool\",\"$62616c616e6365\":\"float\"}}"
+            },
+            "multi": {
+                "plaintext": {
+                    "orders": {
+                        "id": 1,
+                        "note": "leave at door"
+                    },
+                    "items": {
+                        "qty": 3
+                    }
+                },
+                "ciphertext": {
+                    "orders": {
+                        "id": 1,
+                        "note": "nacl:o1Munp3TAVlNr99WmZLlkWrfS7KrZ2NJMXztq7Izia8iBPqdwr3DqM1QodGhIw3fu2_OIkQ="
+                    },
+                    "items": {
+                        "qty": "nacl:wAqINoYUj1zlO_A9gxTERYlwxMkYekkaSmt_UoYXDhwobBtQT9iJoRCvxrmEorvq"
+                    }
+                }
+            },
+            "ext_key": "a48263387704338f4425d46f4444d7ec8d88aeb21bb3515c1062febee303c1cd"
+        },
+        "fips": {
+            "field": {
+                "plaintext": "Ünïcode.User+Tag/42@Example.COM",
+                "ct": "fips:SeWJTuTKwC5yj-rivxHt2sv5j52X_1buePWD6ObrctA__dFWsbwSvIfNDz80ErKp31XbdFsyR1yR4kKaFhlqRl4B3ub-BIrC85hsYktjFhcDP_a3wh8L1XvUUWUkgT-jXnF3oGKFeBhKmBlkZTxbM75GXyi-HTXvCjxqZl8ospua",
+                "ct_aad": "fips:kA8CgoAGwTVaqNjTr23ZqBbLR15DQfq3krA1rNA-3YOz6oCXhqpkUU4kIJrXl4q8SD8Fq68PLng4kn1ha675St9xldZfFWUnSVOdXDocBW3BK_B73t-Er2tO33Uc1UA3ahUxcT6y8-cS_SvYMuDcDQsjEpYwGLFGgPHJ8tb-_w52",
+                "aad": "row:42",
+                "indexes": {
+                    "email_lower": "1d584d59",
+                    "email_first": "bb",
+                    "email_alpha": "f4f8a833ef9123b2d07ff2c3c8f7e3edb3e8ac17049caf9826bd8c77654fcfb615b5caa3b500",
+                    "email_slow": "5dbe8e51838c0a7b"
+                },
+                "types": {
+                    "email_lower": "w3y4wudejwg4a",
+                    "email_first": "swcwtkrd7jhma",
+                    "email_alpha": "cujxrhthhj43y",
+                    "email_slow": "t5hrhz5yluni4"
+                }
+            },
+            "row": {
+                "plaintext": {
+                    "id": 42,
+                    "tenant": "acme",
+                    "name": "Zoë \"Z\" O'Neil / ✓",
+                    "age": -7,
+                    "score": 1.5e-7,
+                    "active": false,
+                    "nickname": null,
+                    "maybe_int": 12345678901,
+                    "maybe_bool": null,
+                    "ssn": "123-45-6789"
+                },
+                "ciphertext": {
+                    "id": 42,
+                    "tenant": "acme",
+                    "name": "fips:SF7SVD5vcnal_64-4hiP_B3S_dVo5ARmyvXWPHUtj5e2eEffMr6q3u1ydZmgJpDW4ayT7ZUbNWoVZEFsNrJqQGzLlnSYsN5lpUlomx3sOq3mroJvhKCAqXE9mWqx27phhDCvUS2nAXTlgnkz4peCgiaAwwtJ",
+                    "age": "fips:xLYY55qNngTGwuQCg9TDwoJp9Ha2ndMQtuCDtlYfoVlQGY-Id-kfYFi1ea5gFbxyXDlJBfUNxUcK7ctO8BtLPD88QpMdxzLfbd9jH_nB_3FhYN0hMiUkMj0JnD-_UkhkTr8mRZ0tHAQ=",
+                    "score": "fips:CLWvRLcRB_E2tcqdhqEg9l_mc6wpYXqtY5K4B45DLhFwcEv4QtVit5KUPN3dns0uF7yt7tu1HDT9GzFYTKCtFFLNT1pA7UDYBMcSiPAE42Jk7P_8iw5goOcyYTtOQS1pCQ7inPFR0_0=",
+                    "active": "fips:hKK-YhsW7JzWUX6kVLqEsbGC8AvsApERPwTF3A1FLHdZxcR2_2L7mmf7JqPiapG4WAZhLAtfi1uN6SydIQU3U5IZzg4ZWEavtv6Jj9BRmyPXZrYZzl44VqOPdaW030LOEA==",
+                    "nickname": null,
+                    "maybe_int": "fips:W-bNkqDRG65LJUuOQ6_C-YNPizRiIYp_77AAu-O4q2PWX6uxCaMKyh-uU01YuHB1YrU0zKsfPjkAj99rcSJwvnKvPKtpKRKupzFFBo0gdroO3sRt4S-2kQYIKuHJfuE1pRQTWd-CEds=",
+                    "maybe_bool": null,
+                    "ssn": "fips:1_wGwTrTxjuSnfuPdNH-MLe5hF7e56QJX4zjBqxBHNtVpww079qUYGbLhxQL6xmS5tMJMG2AM3aF4PVbNUTPriVDctT-4K9lX6EZL0HXM4Js062zUKpdv74sYSJC2LG7HE10AvN_LA147fg="
+                },
+                "indexes": {
+                    "ssn_last4": "5737",
+                    "age_idx": "4fd47163",
+                    "active_idx": "5e",
+                    "score_idx": "66f8b196",
+                    "ssn_active": "39894038cc2faff2",
+                    "name_slow": "fc8f1776"
+                },
+                "compound_type": "om3gojsikb5su",
+                "packed": "{\"ssn\":\"0400000000000000Njc4OQ==\",\"active\":false,\"score\":\"0600000000000000MS41RS03\",\"age\":-7,\"name\":\"1500000000000000Wm_DqyAiWiIgTydOZWlsIC8g4pyT\"}",
+                "typed_indexes": {
+                    "ssn_last4": {
+                        "type": "wpio4cmlqqs2o",
+                        "value": "5737"
+                    },
+                    "age_idx": {
+                        "type": "2vdj3vfr2eabk",
+                        "value": "4fd47163"
+                    },
+                    "active_idx": {
+                        "type": "v2hm45dqinqvk",
+                        "value": "5e"
+                    },
+                    "score_idx": {
+                        "type": "rovocees7wku4",
+                        "value": "66f8b196"
+                    },
+                    "ssn_active": {
+                        "type": "om3gojsikb5su",
+                        "value": "39894038cc2faff2"
+                    },
+                    "name_slow": {
+                        "type": "ehu42wo3ukhas",
+                        "value": "fc8f1776"
+                    }
+                }
+            },
+            "json": {
+                "plaintext": {
+                    "id": 7,
+                    "doc": {
+                        "profile": {
+                            "name": "Ann",
+                            "age": 30,
+                            "city": "Oslo"
+                        },
+                        "flags": [
+                            true,
+                            false
+                        ],
+                        "balance": 10.25
+                    }
+                },
+                "ciphertext": {
+                    "id": 7,
+                    "doc": "{\"profile\":{\"name\":\"fips:6myL3WKhGo6yAtrrerijHZhWXbA0FTc191z8JdLut9zWy-Jsd9ZLkvqtj0pWJWhnfIaBrrp2jAl2JYdkfaS2giyfA2M7CKLPKwCa9IJp4Oruichom6_Nb9Fqx-h3hzns4x_Y\",\"age\":\"fips:VgJMznluMNWqqgArojiNfPB4pnGummqDHnaKUkPDHu8NeXkeJRQyYrrFXbUX-o2pM6Jjj9t85j-zoA6oIgP3cl_9KGdiWA91-4Qk-V23Rtit_xOMYRRQdZnrX2Lwf017OAS5zZIV8YA=\",\"city\":\"Oslo\"},\"flags\":[\"fips:8_uirl6h5d5_Q_bJnG0Hv1JsUnwG404pddFgbmYCFpeEyNp-JbUz12bcPmlufj83o3H4fl1R7IfTmu-LJcX9RFv6j8bl9vgBrw4C_PtMiZprJsnEer7hkLju6y7F3hbkiQ==\",false],\"balance\":\"fips:K5t4j8fIfgF-4XxejUPSdQNx3lLg_50lZpxssOPNbUDENqmCioo80uXYzildebeP6DeWynX1krazmkdEaYo5HLSAd2AqWKYMU8TiCdFzhZxEBhtfNsI1yZiuc3tmCCLKO1ULTx-2dCA=\"}"
+                },
+                "map": "ece34062{\"fields\":{\"$70726f66696c65.$6e616d65\":\"string\",\"$70726f66696c65.$616765\":\"int\",\"$666c616773.#0000000000000000\":\"bool\",\"$62616c616e6365\":\"float\"}}"
+            },
+            "multi": {
+                "plaintext": {
+                    "orders": {
+                        "id": 1,
+                        "note": "leave at door"
+                    },
+                    "items": {
+                        "qty": 3
+                    }
+                },
+                "ciphertext": {
+                    "orders": {
+                        "id": 1,
+                        "note": "fips:HFSzgehJjh_OBrErjpgZa4cfmmGAGvWKdvZ6JjcqolF0glDp7t85Bqhlkx-KtLg_Cgn1qLPJRQE9u-WRSopAdTFjqZXMSJetY76FPina2YrHBMAL5zGjoU0VaYgvMMM0gnWd_t-7RcK1abwVgw=="
+                    },
+                    "items": {
+                        "qty": "fips:vCWJdJdIdFxgA5G8v5v2aVG2X7bpth3rC530B5_h8HTmspjFLQQiNHATDqY6BGK7NvWz0NCS7yzNGpjzK5ljwT9_CCAZvKqp9MI6pPtXYXOvkbi9Rrm7_7O3DpmFRdhioZw92_w4xVA="
+                    }
+                }
+            },
+            "ext_key": "a48263387704338f4425d46f4444d7ec8d88aeb21bb3515c1062febee303c1cd"
+        },
+        "brng": {
+            "field": {
+                "plaintext": "Ünïcode.User+Tag/42@Example.COM",
+                "ct": "brng:lTpaZp0MMsXF0oFbIbRRUL0zM0evE0B1KLijztRyIpmsuZjdJhVa8hcQk9K1rdakeS0pL9BhAG96AOB5nnoI82cHxf32SK-kfuLe9uY8rF2iw8Hg7H3vEds=",
+                "ct_aad": "brng:kJPicj6LSupzrM9-dmGEisfoYdaR2KMeGw1CzWwbsfcJ7mo8-GbERMdOvR5FL0Pn-eRN_MiFU7CRK9V4oiVGLOmO-Ellz8okLQYznedZ6waSUtdsP-C61Ko=",
+                "aad": "row:42",
+                "indexes": {
+                    "email_lower": "3760cfeb",
+                    "email_first": "bb",
+                    "email_alpha": "1a288b127b042a3d284bf5596d4bd25a6cdf5e1d8180b2971354d4c72bd31f087a276a5da500",
+                    "email_slow": "2e306a4be7e10893"
+                },
+                "types": {
+                    "email_lower": "6oirzium5hblq",
+                    "email_first": "sior7of3enuns",
+                    "email_alpha": "zi5e2s2ecrsjc",
+                    "email_slow": "m3cdym765tqac"
+                }
+            },
+            "row": {
+                "plaintext": {
+                    "id": 42,
+                    "tenant": "acme",
+                    "name": "Zoë \"Z\" O'Neil / ✓",
+                    "age": -7,
+                    "score": 1.5e-7,
+                    "active": false,
+                    "nickname": null,
+                    "maybe_int": 12345678901,
+                    "maybe_bool": null,
+                    "ssn": "123-45-6789"
+                },
+                "ciphertext": {
+                    "id": 42,
+                    "tenant": "acme",
+                    "name": "brng:wl_eZa6dWctbp53R7ZQ6rCQ1QGGxFaQ_r2rsSGuwEsa46Y1HFZEZ2MUIuoURJN0n0qsoLJm5FdCRLx1jTJ-N1x3QGAtbHoo0hHhVXZI=",
+                    "age": "brng:S-M-YuqOeELzltvPnHYTH_Nr3mPvnUR4TujBCz8pPuejTuAL8mSN9YVmEGLoA_thBUbV_yAXcqt2lpTivCKVWw==",
+                    "score": "brng:Q816IjgKa43OSv4tnNOIPOCYrgCo7TPCAsSoJyBmXYxzCcyvwryy5Slzus4WWfCEorPkuMsHejhmpTaSv8PhgA==",
+                    "active": "brng:KhnZVPP8ku8oKYgJ6lGxSqj3wnBM0HHhYYCOnorV0km3kp4zuh_VsVwzKtxJddEZihlFvuvjSTY5",
+                    "nickname": null,
+                    "maybe_int": "brng:aZvzVA-3w7zaDyl-tqnUlY8YMtYL6AE2SOW_-c4igF1SyaaHw87aQL4DyS9p45XGxetQetImcqiCTZ3N6fI5Ow==",
+                    "maybe_bool": null,
+                    "ssn": "brng:OkGpoZVaznhmDwH83P1jUN25y-BWW8g-F6NmBwmKU7jF7NZwLexFKtTw_UzjrI4QgJJp4lLXB9QJ2OI6mWfO4wpOGQ=="
+                },
+                "indexes": {
+                    "ssn_last4": "1874",
+                    "age_idx": "517455d0",
+                    "active_idx": "06",
+                    "score_idx": "40492403",
+                    "ssn_active": "cbcf5e64e8a11af7",
+                    "name_slow": "9735b3cc"
+                },
+                "compound_type": "sr2lobjgwx3uk",
+                "packed": "{\"ssn\":\"0400000000000000Njc4OQ==\",\"active\":false,\"score\":\"0600000000000000MS41RS03\",\"age\":-7,\"name\":\"1500000000000000Wm_DqyAiWiIgTydOZWlsIC8g4pyT\"}",
+                "typed_indexes": {
+                    "ssn_last4": {
+                        "type": "bd5jb4vrsxe5u",
+                        "value": "1874"
+                    },
+                    "age_idx": {
+                        "type": "k3tkvq65md63s",
+                        "value": "517455d0"
+                    },
+                    "active_idx": {
+                        "type": "44t4g2kv6ymhu",
+                        "value": "06"
+                    },
+                    "score_idx": {
+                        "type": "xxrti56c2zrd2",
+                        "value": "40492403"
+                    },
+                    "ssn_active": {
+                        "type": "sr2lobjgwx3uk",
+                        "value": "cbcf5e64e8a11af7"
+                    },
+                    "name_slow": {
+                        "type": "i5jfg3abnmqww",
+                        "value": "9735b3cc"
+                    }
+                }
+            },
+            "json": {
+                "plaintext": {
+                    "id": 7,
+                    "doc": {
+                        "profile": {
+                            "name": "Ann",
+                            "age": 30,
+                            "city": "Oslo"
+                        },
+                        "flags": [
+                            true,
+                            false
+                        ],
+                        "balance": 10.25
+                    }
+                },
+                "ciphertext": {
+                    "id": 7,
+                    "doc": "{\"profile\":{\"name\":\"brng:tjOA_-2qXO4KS384gxMa9kJBRm9Dao0fF3LsXK5tfyTV1ggD55jgXOnEZZn_iGriy6-P5W34guAx6_k=\",\"age\":\"brng:pLlA5WpGlRY1Q0ay6zsmCbB0fX2AJ4JltgYvlqDlujvMTQ8qcqrOkKvCvVg5909pOS-18JkEWs13YpOUsmRXIA==\",\"city\":\"Oslo\"},\"flags\":[\"brng:0G92qQxXse-u6y2qpmIZIcF593EQvPOQxe85aESz6_u2iGEaEvYA-HQ9bGDhlBsedkfsElQ7TPlZ\",false],\"balance\":\"brng:g1NU5edC3gR2IarNjVQyRrfJfFA8Z97tzteNr69pedkeMCo0CfFw8kIuV5pVLudwi2SWT1-MVo5PYNOQ8XBZvg==\"}"
+                },
+                "map": "ece34062{\"fields\":{\"$70726f66696c65.$6e616d65\":\"string\",\"$70726f66696c65.$616765\":\"int\",\"$666c616773.#0000000000000000\":\"bool\",\"$62616c616e6365\":\"float\"}}"
+            },
+            "multi": {
+                "plaintext": {
+                    "orders": {
+                        "id": 1,
+                        "note": "leave at door"
+                    },
+                    "items": {
+                        "qty": 3
+                    }
+                },
+                "ciphertext": {
+                    "orders": {
+                        "id": 1,
+                        "note": "brng:6Qyh4K_E4S3xHZpgVa2tD9CSMOFGKCGLLwaQlVD4pCGJTWwlTX6rc-Xu38hdZ7XNrjwpXCF1m0Fxgv56G66trtMza6cH"
+                    },
+                    "items": {
+                        "qty": "brng:0QzmQea1kfU9-jFiBO5h2PzwQDTg1uCt5IERskKnxMrgHQzUSVQA79aQREYT3im8STNgXjXeyH2MHG6MV_9rEw=="
+                    }
+                }
+            },
+            "ext_key": "a48263387704338f4425d46f4444d7ec8d88aeb21bb3515c1062febee303c1cd"
+        }
+    },
+    "floats": [
+        [
+            1.0,
+            "1"
+        ],
+        [
+            0.1,
+            "0.1"
+        ],
+        [
+            -2.5,
+            "-2.5"
+        ],
+        [
+            1000000000000000.0,
+            "1.0E+15"
+        ],
+        [
+            100000000000000.0,
+            "1.0E+14"
+        ],
+        [
+            1.2345678901234568e+17,
+            "1.2345678901235E+17"
+        ],
+        [
+            0.0001,
+            "0.0001"
+        ],
+        [
+            1.0e-5,
+            "1.0E-5"
+        ],
+        [
+            1.5e-7,
+            "1.5E-7"
+        ],
+        [
+            3.1415,
+            "3.1415"
+        ],
+        [
+            99.1,
+            "99.1"
+        ],
+        [
+            1.0e+100,
+            "1.0E+100"
+        ],
+        [
+            -0.0,
+            "-0"
+        ]
+    ],
+    "compound": [
+        "{\"a\":\"0300000000000000eC95\",\"b\":1,\"c\":null,\"d\":true,\"e\":\"0300000000000000Mi41\",\"f\":{\"n\":\"0200000000000000w7w=\"},\"g\":[]}"
+    ]
+}

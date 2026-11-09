@@ -1,43 +1,88 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.21"]
 build-backend = "hatchling.build"
 
 [project]
-name = "ciphersweet-python"
-version = "0.1.0"
-description = "Decrypt CipherSweet-encrypted database fields in Python (NaCl and FIPS backends)"
+name = "ciphersweet-py"
+dynamic = ["version"]
+description = "Searchable field-level encryption for Python, wire-compatible with paragonie/ciphersweet (PHP) and Laravel"
 readme = "README.md"
-license = { file = "LICENSE" }
-authors = [{ name = "Rizal Pahlevi", email = "mrizalpahlevi372@gmail.com" }]
-requires-python = ">=3.8"
-keywords = ["ciphersweet", "encryption", "decryption", "searchable-encryption", "database"]
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Rizal Pahlevi" }]
+requires-python = ">=3.9"
+keywords = [
+    "ciphersweet",
+    "encryption",
+    "searchable-encryption",
+    "blind-index",
+    "field-level-encryption",
+    "laravel",
+    "libsodium",
+]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database",
     "Topic :: Security :: Cryptography",
+    "Typing :: Typed",
 ]
 dependencies = [
-    "cryptography>=3.0",  # For AES-CTR, HKDF
-    "PyNaCl>=1.4",        # For XChaCha20-Poly1305
+    "cryptography>=41",
+    "PyNaCl>=1.5",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=7.0", "pytest-cov"]
+go = ["argon2-cffi>=21.2"]
+dev = [
+    "argon2-cffi>=21.2",
+    "build>=1.0",
+    "mypy>=1.8",
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+    "twine>=5.0",
+]
 
 [project.urls]
-Homepage = "https://github.com/rizalpahlevii/ciphersweet-python"
-Issues = "https://github.com/rizalpahlevii/ciphersweet-python/issues"
+Homepage = "https://github.com/rizalpahlevii/ciphersweet-py"
+Source = "https://github.com/rizalpahlevii/ciphersweet-py"
+Issues = "https://github.com/rizalpahlevii/ciphersweet-py/issues"
+Changelog = "https://github.com/rizalpahlevii/ciphersweet-py/blob/main/CHANGELOG.md"
+
+[tool.hatch.version]
+path = "src/ciphersweet/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ciphersweet"]
 
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "CHANGELOG.md", "LICENSE"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["tests"]
+addopts = "-ra"
 
+[tool.ruff]
+line-length = 110
+target-version = "py39"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "UP006", "UP007", "UP035", "UP045", "B904"]
+
+[tool.mypy]
+python_version = "3.10"
+files = ["src/ciphersweet"]
+ignore_missing_imports = true
+warn_unused_ignores = false
