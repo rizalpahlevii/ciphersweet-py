@@ -2,7 +2,7 @@
 
 ## 0.1.0 (unreleased)
 
-First full release. Replaces the earlier decrypt-only prototype.
+First full release. Replaces the earlier decrypt-only prototype. Requires Python 3.10+.
 
 - Backends: `ModernCrypto` (`nacl:`), `BoringCrypto` (`brng:`, the PHP default) and
   `FIPSCrypto` (`fips:`), wire-compatible with paragonie/ciphersweet v4.

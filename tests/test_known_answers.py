@@ -35,7 +35,7 @@ def test_upstream_vectors(filename, backend):
         assert spec["transforms"] == []
         row.add_blind_index(spec["field"], BlindIndex(name, [], spec["filter-bits"], spec["fast"]))
 
-    for ciphertext, plaintext, blind in zip(case["ciphertext"], case["plaintext"], case["blind"]):
+    for ciphertext, plaintext, blind in zip(case["ciphertext"], case["plaintext"], case["blind"], strict=True):
         decrypted = row.decrypt_row(ciphertext)
         assert decrypted == plaintext
         assert type(decrypted["age"]) is int

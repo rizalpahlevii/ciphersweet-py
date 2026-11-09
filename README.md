@@ -17,7 +17,7 @@ It is the Python sibling of [ciphersweet-go](https://github.com/rizalpahlevii/ci
 pip install ciphersweet-py
 ```
 
-Requires Python 3.9+, [`cryptography`](https://pypi.org/project/cryptography/) and
+Requires Python 3.10+, [`cryptography`](https://pypi.org/project/cryptography/) and
 [`PyNaCl`](https://pypi.org/project/PyNaCl/). The import name is `ciphersweet`.
 
 ## Quick start
