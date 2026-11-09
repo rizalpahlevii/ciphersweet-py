@@ -14,6 +14,7 @@ from ciphersweet import (
     LastFourDigits,
     ModernCrypto,
 )
+from ciphersweet._util import b64url_decode, b64url_encode
 from conftest import make_engine
 
 
@@ -55,9 +56,14 @@ def test_binary_plaintext(random_engine):
 def test_tampering_detected(random_engine):
     field = EncryptedField(random_engine, "t", "f")
     ct = field.encrypt_value("hello")
-    tampered = ct[:-3] + ("A" if ct[-3] != "A" else "B") + ct[-2:]
-    with pytest.raises(InvalidCiphertextException):
-        field.decrypt_value(tampered)
+    prefix, payload = ct[:5], bytearray(b64url_decode(ct[5:]))
+    # Flip one bit in every byte position in turn: each must be rejected.
+    # (Editing a base64 character instead can hit unused padding bits.)
+    for i in range(len(payload)):
+        payload[i] ^= 1
+        with pytest.raises(InvalidCiphertextException):
+            field.decrypt_value(prefix + b64url_encode(bytes(payload)))
+        payload[i] ^= 1
     with pytest.raises(InvalidCiphertextException):
         field.decrypt_value("xxxx:" + ct[5:])
 
