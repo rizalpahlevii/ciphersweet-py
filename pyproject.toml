@@ -41,6 +41,9 @@ dependencies = [
     "PyNaCl>=1.5",
 ]
 
+[project.scripts]
+ciphersweet = "ciphersweet.cli:main_entry"
+
 [project.optional-dependencies]
 go = ["argon2-cffi>=21.2"]
 dev = [
