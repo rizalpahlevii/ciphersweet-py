@@ -1,12 +1,14 @@
 # Changelog
 
-## Unreleased
+## 0.2.0 (2026-11-10)
 
+- Documentation site at <https://ciphersweet-py.readthedocs.io> with a user guide and API
+  reference. The PyPI page links to it.
 - `ciphersweet` command-line tool (also `python -m ciphersweet`) with `generate-key`, `encrypt`,
   `decrypt`, `blind-index` and `rotate` commands. Keys come from `CIPHERSWEET_KEY` or a key file,
   and the backend from `--backend`, `CIPHERSWEET_BACKEND` or the ciphertext prefix.
 
-## 0.1.0 (unreleased)
+## 0.1.0 (2026-11-10)
 
 First full release. Replaces the earlier decrypt-only prototype. Requires Python 3.10+.
 
@@ -21,6 +23,4 @@ First full release. Replaces the earlier decrypt-only prototype. Requires Python
   for spatie/laravel-ciphersweet.
 - `ciphersweet.compat.go`: reads ciphersweet-go's `boring:` format and Go-style slow indexes.
 - `ciphersweet.migrate`: DDL helpers.
-- Documentation site (MkDocs Material, hosted on Read the Docs) with a user guide and API
-  reference.
 - Fixed in the prototype: FIPS MAC key length (48 → 32 bytes, as in PHP).
