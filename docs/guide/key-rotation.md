@@ -30,3 +30,6 @@ Remember to write the new blind indexes too: they depend on the key.
 
 A typical migration loops over the table in batches, rotates each row that needs it, and keeps
 both keys available until it finishes, so the application can read old and new rows meanwhile.
+
+For a column exported to a file, `ciphersweet rotate` does the same from the shell: see
+[Command-line tool](cli.md#rotating-keys).

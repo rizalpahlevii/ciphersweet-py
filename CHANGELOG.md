@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- `ciphersweet` command-line tool (also `python -m ciphersweet`) with `generate-key`, `encrypt`,
+  `decrypt`, `blind-index` and `rotate` commands. Keys come from `CIPHERSWEET_KEY` or a key file,
+  and the backend from `--backend`, `CIPHERSWEET_BACKEND` or the ciphertext prefix.
+
 ## 0.1.0 (unreleased)
 
 First full release. Replaces the earlier decrypt-only prototype. Requires Python 3.10+.
