@@ -11,6 +11,8 @@ the upstream known-answer tests plus a second set of vectors generated with PHP 
 
 It is the Python sibling of [ciphersweet-go](https://github.com/rizalpahlevii/ciphersweet-go).
 
+**Documentation:** <https://ciphersweet-py.readthedocs.io> (user guide and API reference).
+
 ## Installation
 
 ```bash
@@ -202,6 +204,10 @@ pip install -e ".[dev]"
 pytest
 ruff check src tests && ruff format --check src tests && mypy
 python -m build && twine check dist/*
+
+# docs, served at http://127.0.0.1:8000
+pip install -r docs/requirements.txt
+mkdocs serve
 ```
 
 ## Publishing to PyPI
