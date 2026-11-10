@@ -72,3 +72,4 @@ ENV/
 
 # macOS
 .DS_Store
+site/
