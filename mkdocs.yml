@@ -90,6 +90,7 @@ nav:
       - Several tables at once: guide/multi-rows.md
       - Multi-tenancy: guide/multi-tenancy.md
       - Key rotation: guide/key-rotation.md
+      - Command-line tool: guide/cli.md
       - Laravel: guide/laravel.md
       - ciphersweet-go: guide/go.md
       - Database columns: guide/migrations.md
