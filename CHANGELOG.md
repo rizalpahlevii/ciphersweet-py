@@ -21,4 +21,6 @@ First full release. Replaces the earlier decrypt-only prototype. Requires Python
   for spatie/laravel-ciphersweet.
 - `ciphersweet.compat.go`: reads ciphersweet-go's `boring:` format and Go-style slow indexes.
 - `ciphersweet.migrate`: DDL helpers.
+- Documentation site (MkDocs Material, hosted on Read the Docs) with a user guide and API
+  reference.
 - Fixed in the prototype: FIPS MAC key length (48 → 32 bytes, as in PHP).

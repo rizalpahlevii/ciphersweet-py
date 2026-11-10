@@ -58,6 +58,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/rizalpahlevii/ciphersweet-py"
+Documentation = "https://ciphersweet-py.readthedocs.io"
 Source = "https://github.com/rizalpahlevii/ciphersweet-py"
 Issues = "https://github.com/rizalpahlevii/ciphersweet-py/issues"
 Changelog = "https://github.com/rizalpahlevii/ciphersweet-py/blob/main/CHANGELOG.md"
